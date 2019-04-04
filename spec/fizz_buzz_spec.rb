@@ -1,4 +1,5 @@
 require "./lib/fizz_buzz"
+require "pry"
 
 describe "fizz_buzz" do
 
@@ -19,6 +20,7 @@ describe "fizz_buzz" do
     end
 
     it "returns 'Please enter a valid number!' if number is not a number" do
+        binding.pry
         expect(fizz_buzz("sometext")).to eq "Please enter a valid number!"
     end
 
